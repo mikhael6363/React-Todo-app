@@ -1,0 +1,30 @@
+@import 'common/styles/templates';
+
+.todo {
+  @extend %todo;
+}
+
+.todoItem {
+  padding: 0rem 0.5rem;
+  list-style-type: none;
+  flex-grow: 1;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.completeBtn,
+.trashBtn {
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.trashBtn {
+  background: #ff6f47;
+}
+.completeBtn {
+  background: #0bd4a2;
+}

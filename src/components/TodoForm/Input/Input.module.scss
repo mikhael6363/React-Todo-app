@@ -1,0 +1,44 @@
+$color: #86181d;
+$bgColor: #ffeef0;
+$borderColor: #f97583;
+
+.validInput {
+  border-color: green;
+}
+.errorInput {
+  border-color: red;
+}
+.errorMessage {
+  position: absolute;
+  z-index: 10;
+  display: block;
+  max-width: 450px;
+  padding: 4px 8px;
+  margin: 8px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+
+  color: $color;
+  background: $bgColor;
+  border: 1px solid $borderColor;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    margin-left: -1px;
+    border-width: 6px;
+    bottom: 100%;
+    left: 10px;
+    z-index: 15;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent $borderColor transparent;
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+  }
+}
+
+

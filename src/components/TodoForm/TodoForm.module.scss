@@ -1,0 +1,34 @@
+@import 'common/styles/templates';
+
+$buttonColor: #ff6f47;
+$bgColor: #f7fffe;
+
+.todoForm {
+  @extend %flexCentering;
+  width: 100%;
+}
+
+.todoInput {
+  width: 100%;
+}
+
+.todoInput,
+.todoButton {
+  padding: 0.5rem;
+  background: $bgColor;
+  border: none;
+  font-size: 2rem;
+}
+
+.todoButton {
+  width: 60px;
+  background: $bgColor;
+  color: $buttonColor;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background: $buttonColor;
+    color: $bgColor;
+  }
+}
